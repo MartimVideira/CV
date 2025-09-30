@@ -22,6 +22,8 @@ jobs:
         run: | 
           pip install -r requirements.txt
           echo $(which python3)
+          echo "Tem ?: $(which pdflatex)"
+
          
       - name: Generating cv.tex
         run: python3 main.py
