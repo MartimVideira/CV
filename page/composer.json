@@ -1,0 +1,18 @@
+{
+    "name": "martim/page",
+    "require": {
+        "symfony/yaml": "^6.4",
+        "erusev/parsedown": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Martim\\Page\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MartimVideira",
+            "email": "mitram790@gmail.com"
+        }
+    ]
+}
