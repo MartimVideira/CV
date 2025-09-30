@@ -1,5 +1,5 @@
 name: Build and Deploy Pages
-run-name: build-deploy-pages
+run-name: Build and Deploy
 on:
   push:
     branches:
@@ -22,7 +22,6 @@ jobs:
             cd page
             composer install --no-progress --prefer-dist --optimize-autoloader
       - name: Build static files
-        id: build
         run: |
             mkdir build
             cd page
