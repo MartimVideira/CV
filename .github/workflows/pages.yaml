@@ -1,5 +1,5 @@
-name: Compile PDF
-run-name: Compile Pdf
+name: Build and Deploy Pages
+run-name: build-deploy-pages
 on:
   push:
     branches:
