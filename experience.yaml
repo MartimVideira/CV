@@ -16,7 +16,7 @@ education:
     end: "2025"
   university: University of Porto, Portugal
   gpa: 17/20
-  coursework: Software Design, Web Technologies, Operating Systems, Artificial Intelligence.
+  coursework: Software Design, Web Technologies, Operating Systems, Artificial Intelligence
 
 programming_languages:
   [
@@ -59,7 +59,7 @@ languages:
   - l: French
     level: B2
   - l: Hungarian
-    level: A1 (Currently Learning)
+    level: Currently Learning
 
 experience:
   - position: Intern Software Developer at Jumpseller
@@ -67,7 +67,7 @@ experience:
     from:
       begin: February 2023
       end: July 2023
-    soft-sills: Leadership, Project Management, Team Work,Working with changing requirements.
+    soft-sills: Leadership, Project Management, Team Work,Working with changing requirements
     technologies: React, Ruby on Rails, Amazon S3
     description: |
       Jumpseller's product allows business owners to create online stores. In our project Store Assets Manager, we
@@ -81,7 +81,7 @@ experience:
       end: February 2025
     description: |
       Built and improved the automatic code grading platform, implementing program analysis techniques to detect
-      patterns and assess code quality. Technologies used: Python, Tree-sitter
+      patterns and assess code quality. Technologies used: Python, Tree-sitter.
   - position: Teaching Assistant - Compilers at FEUP
     company: Faculty of Engineering of the University of Porto
     from:
@@ -95,8 +95,7 @@ experience:
       end: July 2020
     description: |
       In high school, I was deeply in love with Mathematics and with teaching it to others, so I created a small Math
-      Tutoring center where I tutored 5 students from 5th to 9th grade
-      Projects
+      Tutoring center where I tutored 5 students from 5th to 9th grade.
 
 projects:
   - name: UniCompass
@@ -124,116 +123,116 @@ projects:
     url: 
     technologies: [JavaScript, React, CSS,Github Actions]
     description: |
-      - Developed a Wordle-inspired game supporting multiple languages with an extensible design.
-      - Implemented a responsive UI for seamless play across devices.
-      - Integrated GitHub Actions to allow users to easily add and share new language wordlists.
-      - Deployed the project on GitHub Pages for public access.
-  - name: PLS
+      - Developed a Wordle-inspired game supporting multiple languages with an extensible design
+      - Implemented a responsive UI for seamless play across devices
+      - Integrated GitHub Actions to allow users to easily add and share new language wordlists
+      - Deployed the project on GitHub Pages for public access
+  - name: pls
     url: 
-    technologies: [Python, Tree-sitter, JavaScript, VSCode Extension, Language Server]
+    technologies: [Python, Tree-sitter, JavaScript, VSCode Extension, Language Server Protocol]
     short_description: "Dialect-agnostic Prolog Language Server for enhanced development experience in VSCode."
     description: |
-      - Developed a **language server for Prolog** aimed at supporting multiple dialects, improving developer productivity.
-      - Implemented features such as syntax highlighting, code navigation, and program analysis using **Tree-sitter**.
-      - Integrated with **VSCode** as an extension to provide real-time feedback and language-aware tooling.
-      - Focused on enhancing both academic and practical usage of Prolog across different codebases.
+      - Developed a **language server for Prolog** aimed at supporting multiple dialects, improving developer productivity
+      - Implemented features such as syntax highlighting, code navigation, and program analysis using **Tree-sitter**
+      - Integrated with **VSCode** as an extension to provide real-time feedback and language-aware tooling
+      - Focused on enhancing both academic and practical usage of Prolog across different codebases
   - name: PFL-Yote
     url: 
     technologies: [Prolog]
     short_description: "Board game implemented in Prolog featuring an AI opponent using the Minimax algorithm."
     description: |
-      - Developed a **board game in Prolog** with both human and AI gameplay modes.
-      - Implemented an **AI opponent using the Minimax algorithm** to provide challenging gameplay.
-      - Focused on applying Prolog's logical programming strengths for game state evaluation and move selection.
+      - Developed a **board game in Prolog** with both human and AI gameplay modes
+      - Implemented an **AI opponent using the Minimax algorithm** to provide challenging gameplay
+      - Focused on applying Prolog's logical programming strengths for game state evaluation and move selection
   - name: LDTS-Explosive4
     url: 
     technologies: [Java, Spock, Groovy]
     short_description: "Text-based Connect Four variant with gravity and exploding pieces, used to study design patterns and testing."
     description: |
-      - Developed a **text-based Connect Four variant** in Java with pieces affected by gravity.
-      - Implemented an **endless game loop** where completed lines triggered falling and exploding pieces.
-      - Focused on applying **design patterns** and testing practices using **Spock and Groovy**.
-      - Explored game mechanics and program design for educational purposes in software engineering.
+      - Developed a **text-based Connect Four variant** in Java with pieces affected by gravity
+      - Implemented an **endless game loop** where completed lines triggered falling and exploding pieces
+      - Focused on applying **design patterns** and testing practices using **Spock and Groovy**
+      - Explored game mechanics and program design for educational purposes in software engineering
 
   - name: Projecto de LBAW
     url: 
     technologies: [PHP, Laravel, PostgreSQL, Docker, JavaScript, CSS]
     short_description: "Trello-like project management app with admin pages and real-time chat using WebSockets."
     description: |
-      - Developed a **Trello-like project management application** using PHP and Laravel.
-      - Implemented **admin pages** for project oversight and user management.
-      - Integrated a **real-time chat system** using WebSockets for team communication.
-      - Used **Docker** for development and deployment, and PostgreSQL as the database backend.
+      - Developed a **Trello-like project management application** using PHP and Laravel
+      - Implemented **admin pages** for project oversight and user management
+      - Integrated a **real-time chat system** using WebSockets for team communication
+      - Used **Docker** for development and deployment, and PostgreSQL as the database backend
   - name: Projecto de LTW
     url: 
     technologies: [PHP, JavaScript, CSS, SQLite, Python, Selenium]
     short_description: "Restaurant website (UberEats-like)"
     description: |
-      - Developed a **restaurant website** using vanilla PHP, JavaScript, and CSS with a **SQLite database**, writing custom SQL queries, no ORM.
-      - Implemented a **multiprocessing web crawler in Python with Selenium** to automatically download large sets of images for the site.
-      - Focused on integrating back-end data handling with front-end presentation.
-      - Applied practical web development techniques and automation to support site content management.
+      - Developed a **restaurant website** using vanilla PHP, JavaScript, and CSS with a **SQLite database**, writing custom SQL queries, no ORM
+      - Implemented a **multiprocessing web crawler in Python with Selenium** to automatically download large sets of images for the site
+      - Focused on integrating back-end data handling with front-end presentation
+      - Applied practical web development techniques and automation to support site content management
   - name: PFL-Polynomial
     url: 
     technologies: [Haskell]
     short_description: "Haskell project implementing polynomials with operations, internal BST representation, and a custom parser."
     description: |
-      - Developed a **Haskell program to represent and manipulate polynomials** with various operations.
-      - Used a **Binary Search Tree** as the internal data structure for efficient polynomial storage and operations.
-      - Implemented **string representation** of polynomials and their operations.
-      - Built a **parser generator (Parser Combinator)** and used it to parse string input into the internal polynomial representation.
-      - Combined functional programming and parsing techniques to create a robust mathematical toolkit.
+      - Developed a **Haskell program to represent and manipulate polynomials** with various operations
+      - Used a **Binary Search Tree** as the internal data structure for efficient polynomial storage and operations
+      - Implemented **string representation** of polynomials and their operations
+      - Built a **parser generator (Parser Combinator)** and used it to parse string input into the internal polynomial representation
+      - Combined functional programming and parsing techniques to create a robust mathematical toolkit
   - name: RCOM-Proj1
     url: 
     technologies: [C, Serial Communication, Protocol Design]
     short_description: "Custom connection-based communication protocol over serial port with framing, error detection, and configurable application layer."
     description: |
-      - Designed and implemented a **connection-based communication protocol** over a serial port.
-      - Developed a **custom frame format** with start/end flags, byte-stuffing, sequence numbers, and BCC for error detection.
-      - Implemented a **link layer** responsible for reliable byte-level transmission between devices.
-      - Built an **application layer** with configurable roles (reader/writer), baud rate, number of retransmissions, and port selection.
-      - Packets were encapsulated inside a **TLV (Type-Length-Value) structure** for structured data transfer.
-      - Focused on ensuring **ordered, reliable, and error-resistant communication** over an inherently unreliable serial link.
+      - Designed and implemented a **connection-based communication protocol** over a serial port
+      - Developed a **custom frame format** with start/end flags, byte-stuffing, sequence numbers, and BCC for error detection
+      - Implemented a **link layer** responsible for reliable byte-level transmission between devices
+      - Built an **application layer** with configurable roles (reader/writer), baud rate, number of retransmissions, and port selection
+      - Packets were encapsulated inside a **TLV (Type-Length-Value) structure** for structured data transfer
+      - Focused on ensuring **ordered, reliable, and error-resistant communication** over an inherently unreliable serial link
   - name: RCOM-Download
     url: 
     technologies: [C, FTP, Networking]
     short_description: "C implementation of key FTP protocol features, including URL parsing, passive mode, and directory handling."
     description: |
-      - Implemented essential parts of the **FTP protocol** in C, focusing on file and directory downloads.
-      - Parsed URLs and transformed hostnames into IP addresses using custom functions.
-      - Opened a **control socket**, entered **passive mode**, and retrieved dynamic port numbers for data transfer.
-      - Created a **data/download socket** to retrieve files; for directories, sent LIST commands to enumerate contents.
-      - Focused on low-level networking, socket management, and protocol compliance to handle both files and directories reliably.
+      - Implemented essential parts of the **FTP protocol** in C, focusing on file and directory downloads
+      - Parsed URLs and transformed hostnames into IP addresses using custom functions
+      - Opened a **control socket**, entered **passive mode**, and retrieved dynamic port numbers for data transfer
+      - Created a **data/download socket** to retrieve files; for directories, sent LIST commands to enumerate contents
+      - Focused on low-level networking, socket management, and protocol compliance to handle both files and directories reliably
 
   - name: Computer Graphics
     url: 
     technologies: [Three.js, JavaScript, XML, Shaders]
     short_description: "3D interactive house room using Three.js with an XML-based engine for editable scenery and custom shaders."
     description: |
-      - Developed a **3D interactive house room** using Three.js and vanilla JavaScript with user controls to explore the environment.
-      - Designed an **XML-based system** to define new sceneries and created a parser to transform XML data into Three.js objects.
-      - Built **custom XML generators** to allow JavaScript code to generate large, editable projects while remaining engine-agnostic.
-      - Implemented a **mini game engine** that consumed XML for object definitions and JavaScript for interactions.
-      - Wrote **basic shaders** to enhance visual effects and scene realism.
+      - Developed a **3D interactive house room** using Three.js and vanilla JavaScript with user controls to explore the environment
+      - Designed an **XML-based system** to define new sceneries and created a parser to transform XML data into Three.js objects
+      - Built **custom XML generators** to allow JavaScript code to generate large, editable projects while remaining engine-agnostic
+      - Implemented a **mini game engine** that consumed XML for object definitions and JavaScript for interactions
+      - Wrote **basic shaders** to enhance visual effects and scene realism
 
   - name: Duckietown
     url: 
     technologies: [Python, ROS, Reinforcement Learning]
     short_description: "Autonomous Duckiebot capable of driving and recognizing road signs using Reinforcement Learning in ROS."
     description: |
-      - Developed an **autonomous Duckiebot** using Python and ROS to navigate a simulated or real environment.
-      - Implemented **Reinforcement Learning algorithms** for decision-making and control of the robot.
-      - Enabled the robot to **detect and recognize road signs**, integrating perception with navigation.
-      - Focused on robotics, machine learning, and sensor-driven control for real-time autonomous driving tasks.
+      - Developed an **autonomous Duckiebot** using Python and ROS to navigate a simulated or real environment
+      - Implemented **Reinforcement Learning algorithms** for decision-making and control of the robot
+      - Enabled the robot to **detect and recognize road signs**, integrating perception with navigation
+      - Focused on robotics, machine learning, and sensor-driven control for real-time autonomous driving tasks
 
   - name: Amazoff
     url: 
     technologies: [Python, JavaScript, CRDTs, Nginx, Progressive Web App]
     short_description: "Local-first collaborative shopping list with CRDT-based offline support and configurable sync options."
     description: |
-      - Developed a **server based on Amazon DynamoDB principles**, using consistent hashing in a ring structure with multiple replicas.
-      - Implemented **CRDTs (Conflict-free Replicated Data Types)** to achieve local-first, highly available, weakly eventually consistent data ownership.
-      - Designed a **server with a single POST API**, leveraging CRDT merge properties to simplify synchronization logic.
-      - Provided **offline support** and multiple sync options, including copy-paste, text-based input, or connecting your own server.
-      - Built a **progressive web app** front-end for a collaborative shopping list, focusing on usability, real-time updates, and local-first interaction.
-      - Used **Nginx** as a reverse proxy to handle requests efficiently.
+      - Developed a **server based on Amazon DynamoDB principles**, using consistent hashing in a ring structure with multiple replicas
+      - Implemented **CRDTs (Conflict-free Replicated Data Types)** to achieve local-first, highly available, weakly eventually consistent data ownership
+      - Designed a **server with a single POST API**, leveraging CRDT merge properties to simplify synchronization logic
+      - Provided **offline support** and multiple sync options, including copy-paste, text-based input, or connecting your own server
+      - Built a **progressive web app** front-end for a collaborative shopping list, focusing on usability, real-time updates, and local-first interaction
+      - Used **Nginx** as a reverse proxy to handle requests efficiently
