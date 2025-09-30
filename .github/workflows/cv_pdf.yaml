@@ -1,0 +1,48 @@
+name: Compile PDF
+run-name: Compile Pdf
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      
+      - name: Install Dependencies
+        run: | 
+          pip install -r requirements.txt
+          echo $(which python3)
+         
+      - name: Generating cv.tex
+        run: python3 main.py
+
+
+      - name: Set up LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: out.tex   
+
+      - name: Upload Extension as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv.pdf
+          path: ./out.pdf
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest PDF
+          files: ./out.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
