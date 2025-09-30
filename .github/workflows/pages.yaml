@@ -16,11 +16,17 @@ jobs:
       - name: Setup PHP with PECL extension
         uses: shivammathur/setup-php@v2
 
+      - name: Install Php Dependencies
+        id: build
+        run: |
+            cd page
+            composer install --no-progress --prefer-dist --optimize-autoloader
       - name: Build static files
         id: build
         run: |
             mkdir build
-            php page/index.php > build/index.html
+            cd page
+            php index.php > ../build/index.html
 
 
       - name: Upload static files as artifact
