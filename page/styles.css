@@ -1,14 +1,26 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    margin: 0px;
-    padding: 1em;
+    padding:1em;
     background-image: url("./imgs/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+main {
     display: flex;
     flex-flow: column wrap;
     gap: 1em;
     align-items: center;
+}
+
+main>* {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 section#experience-container {
@@ -21,10 +33,6 @@ section#experience-container {
 article.experience {
     display: flex;
     gap: 1em;
-}
-
-article.experience > img {
-    max-height: 100px;
 }
 
 article.experience>div.experience-content {
@@ -49,13 +57,15 @@ section#projects-container {
 }
 
 
-nav > ul > li {
+nav>ul>li {
     display: flex;
-    gap:1em;
+    gap: 1em;
     align-items: center;
 }
+
 nav ul,
 section#languages ul {
+    padding: 0;
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
@@ -154,6 +164,11 @@ div.window-header img.window-icon {
 
 div.window-controls>img {
     width: 1em;
+}
+
+div.icon > img, img.icon {
+    max-width:60px;
+    max-height: 60px;
 }
 
 div.window-header>div.window-title {

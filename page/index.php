@@ -18,7 +18,7 @@
 
           <div class="window-header">
               <div class= "window-title" >
-              <img class="window-icon"src="./imgs/icons/<?= $icon ?>">
+              <img class="icon window-icon" src="./imgs/icons/<?= $icon ?>">
               <h2><?= $title ?></h2>
               </div>
               <?= windowControls() ?>
@@ -27,9 +27,9 @@
     function windowControls(){ ?>
 
             <div class="window-controls">
-                <img src="./imgs/window-controls-minimize.png"/>
-                <img src="./imgs/window-controls-maximize.png"/>
-                <img src="./imgs/window-controls-close.png"/>
+                <img alt="minimize" src="./imgs/window-controls-minimize.png">
+                <img alt="maximize" src="./imgs/window-controls-maximize.png">
+                <img alt="close" src="./imgs/window-controls-close.png">
             </div>
     <?php }
     function windowHeaderBase($title_el) {
@@ -48,7 +48,7 @@
             <div class="window-folder-container">
           <?php  foreach ($items  as $item) { ?>
                   <div class="icon">
-                <img src= "./imgs/icons/<?= $icons[rand(0,$nIcons-1)] ?>"/>
+                <img alt="window-title" src="./imgs/icons/<?= $icons[rand(0,$nIcons-1)] ?>"/>
                   <span><?= $item ?>  </span>
                   </div>
           <?php } ?>
@@ -64,11 +64,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> <?php echo $data["prefered_name"] ?>'s CV </title>   
     <link rel="icon" type="image/x-icon" href="./imgs/icons/syncapp.exe_14_100-6.png">
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
+    <main>
     <article class="window about-me">
     <?= windowHeader(1,"About Me",  "nusrmgr.cpl_14_200-6.png") ?>
     <div class="about-me">
@@ -83,7 +85,7 @@
             <?php  foreach ($data["languages"] as $language) { ?>
                     <li>
                     <div class="icon">
-                        <img src="./imgs/<?=$language["l"]?>.svg"> 
+                        <img halt="flag" src="./imgs/<?=$language["l"]?>.svg"> 
                     <span><?= $language["level"]?>  </span>
                     </div>
             </li>
@@ -95,14 +97,14 @@
         <nav>
             <ul>
                 <li>
-                <img src = "./imgs/icons/console.dll_14_1-5.png"/>
+                <img class="icon" src = "./imgs/icons/console.dll_14_1-5.png">
                 <a href="<?= $data["github"]["link"]?>"><?= $data["github"]["display"]?></a>
                 </li>
                 <li>
-                  <img src = "./imgs/icons/ahui.exe_14_2006-3.png"/>
+                  <img class="icon" src = "./imgs/icons/ahui.exe_14_2006-3.png">
                   <a href="<?= $data["linkedin"]["link"]?>"><?= $data["linkedin"]["display"]?></a></li>
                 <li>
-                <img src = "./imgs/icons/msoeres.dll_14_2-6.png"/>
+                <img class="icon" src = "./imgs/icons/msoeres.dll_14_2-6.png">
                   <a href="mailto:<?= $data["email"]?>"><?= $data["email"]?></a></li>
             </ul>
         </nav>
@@ -119,7 +121,7 @@
         <section id="experience-container">
         <?php  foreach ($data["experience"] as $experience) { ?>
                 <article class="experience">
-                <img src= "./imgs/icons/<?= $icons[rand(0,$nIcons-1)] ?>"/>
+                <img class="icon" src= "./imgs/icons/<?= $icons[rand(0,$nIcons-1)] ?>">
                 <div class="experience-content">
                 <h3> <?= $experience["position"]?> </h3>
                 <div> <?= $parseDown->text($experience["description"])?> </div>
@@ -140,7 +142,7 @@
             <div class="project-technologies">
             <?php  foreach ($project["technologies"] as $technology) { $index = rand(0,$nIcons-1); ?>
                 <div class="icon">
-                <img src= "./imgs/icons/<?= $icons[$index] ?>"/>
+                <img src= "./imgs/icons/<?= $icons[$index] ?>">
                 <span><?= $technology ?>  </span>
                 </div>
             <?php } ?>
@@ -154,5 +156,6 @@
     <?= folder("Programming Languages",$data["programming_languages"]) ?>
     <?= folder("Technologies",$data["technologies"]) ?>
     </div>
+</main>
 </body>
 </html>
