@@ -7,7 +7,7 @@
     $yaml = file_get_contents("./../experience.yaml");
 
     $dir    = './imgs/icons';
-    $icons = array_diff(scandir($dir), array('..', '.'));
+    $icons = array_values(array_diff(scandir($dir), array('..', '.')));
     $nIcons = count($icons);
 
     $data = Yaml::parse($yaml);
@@ -65,6 +65,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <?php echo $data["prefered_name"] ?>'s CV </title>   
+    <link rel="icon" type="image/x-icon" href="./imgs/icons/syncapp.exe_14_100-6.png">
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
@@ -134,14 +135,16 @@
         <?php  foreach ($data["projects"] as $project) { ?>
             <article class="window project">
             <?php  windowHeader(3,$project["name"],"shell32.dll_14_302-5.png")?> 
+            <div class="window-content">
             <div> <?= $parseDown->text($project["description"])?> </div>
             <div class="project-technologies">
-            <?php  foreach ($project["technologies"] as $technology) { ?>
+            <?php  foreach ($project["technologies"] as $technology) { $index = rand(0,$nIcons-1); ?>
                 <div class="icon">
-                <img src= "./imgs/icons/<?= $icons[rand(0,$nIcons-1)] ?>"/>
+                <img src= "./imgs/icons/<?= $icons[$index] ?>"/>
                 <span><?= $technology ?>  </span>
                 </div>
             <?php } ?>
+            </div>
             </div>
             </article>
         <?php } ?>

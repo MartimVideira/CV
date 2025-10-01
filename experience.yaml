@@ -129,7 +129,7 @@ projects:
       - Deployed the project on GitHub Pages for public access
   - name: pls
     url: 
-    technologies: [Python, Tree-sitter, JavaScript, VSCode Extension, Language Server Protocol]
+    technologies: [Python, Language Server Protocol, Tree-sitter, JavaScript, VSCode]
     short_description: "Dialect-agnostic Prolog Language Server for enhanced development experience in VSCode."
     description: |
       - Developed a **language server for Prolog** aimed at supporting multiple dialects, improving developer productivity
@@ -184,7 +184,7 @@ projects:
       - Combined functional programming and parsing techniques to create a robust mathematical toolkit
   - name: RCOM-Proj1
     url: 
-    technologies: [C, Serial Communication, Protocol Design]
+    technologies: [C,Networking, Protocol Design]
     short_description: "Custom connection-based communication protocol over serial port with framing, error detection, and configurable application layer."
     description: |
       - Designed and implemented a **connection-based communication protocol** over a serial port

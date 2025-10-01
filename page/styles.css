@@ -1,24 +1,30 @@
 body {
+    margin: 0px;
+    padding: 1em;
     background-image: url("./imgs/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column wrap;
     gap: 1em;
+    align-items: center;
 }
 
 section#experience-container {
     display: flex;
+    flex-direction: column;
     gap: 1em;
-    flex-wrap: wrap;
     padding: 1em;
 }
 
 article.experience {
     display: flex;
     gap: 1em;
+}
+
+article.experience > img {
+    max-height: 100px;
 }
 
 article.experience>div.experience-content {
@@ -29,6 +35,7 @@ article.experience>div.experience-content {
 section#projects-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
@@ -42,36 +49,57 @@ section#projects-container {
 }
 
 
-nav ul, section#languages ul {
+nav > ul > li {
+    display: flex;
+    gap:1em;
+    align-items: center;
+}
+nav ul,
+section#languages ul {
     display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 1em;
-    padding-right:1em;
-}
-
-li {
-    display: flex;
-    align-items: center;
+    padding-right: 1em;
 }
 
 div.about-me {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-div.about-me-content h2{
+div.about-me>div {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+div.about-me-content h2 {
     margin-bottom: 10px;
 }
-div.about-me-content{
-    padding:10px;
+
+div.about-me-content {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    gap:1em;
+    gap: 1em;
 }
+
+div.window-content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 div#user-profile {
     background-color: rgb(56, 127, 225);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap:1em;
+    justify-content: center;
+    gap: 1em;
     padding: 1em;
 }
 
@@ -104,8 +132,10 @@ div#user-profile img {
 
 div.project-technologies {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5em;
     padding-left: 1em;
+
 }
 
 div.icon {
@@ -114,7 +144,7 @@ div.icon {
     align-items: center;
 }
 
-section#languages div.icon > img {
+section#languages div.icon>img {
     width: 5em;
 }
 
@@ -122,26 +152,35 @@ div.window-header img.window-icon {
     width: 2em;
 }
 
-div.window-controls > img {
-    width:1em;
+div.window-controls>img {
+    width: 1em;
 }
-div.window-header > div.window-title {
+
+div.window-header>div.window-title {
     display: flex;
     align-items: center;
-    gap:1em;
-}
-div.folder-container{
-    display: flex;
     gap: 1em;
 }
-div.window-folder{
+
+div.folder-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+div.folder-container>* {
+    flex-grow: 1;
+}
+
+div.window-folder {
     padding: 1em;
 }
-div.window-folder-container{
+
+div.window-folder-container {
     display: flex;
     background-color: white;
-    gap:1em;
-    padding:1em;
+    gap: 1em;
+    padding: 1em;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
