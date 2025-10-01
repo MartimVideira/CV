@@ -1,0 +1,147 @@
+body {
+    background-image: url("./imgs/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+section#experience-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+article.experience {
+    display: flex;
+    gap: 1em;
+}
+
+article.experience>div.experience-content {
+    display: flex;
+    flex-direction: column;
+}
+
+section#projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.window {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 6px solid blue;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 230, 209);
+}
+
+
+nav ul, section#languages ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    padding-right:1em;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+div.about-me {
+    display: flex;
+}
+
+div.about-me-content h2{
+    margin-bottom: 10px;
+}
+div.about-me-content{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+div#user-profile {
+    background-color: rgb(56, 127, 225);
+    display: flex;
+    align-items: center;
+    gap:1em;
+    padding: 1em;
+}
+
+div#user-profile h1 {
+    color: white;
+}
+
+div#user-profile img {
+    width: 10em;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.window> :first-child {
+    margin: 0px;
+}
+
+.window * {
+    margin: 0px;
+}
+
+.window-header {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+
+div.project-technologies {
+    display: flex;
+    gap: 1.5em;
+    padding-left: 1em;
+}
+
+div.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#languages div.icon > img {
+    width: 5em;
+}
+
+div.window-header img.window-icon {
+    width: 2em;
+}
+
+div.window-controls > img {
+    width:1em;
+}
+div.window-header > div.window-title {
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+div.folder-container{
+    display: flex;
+    gap: 1em;
+}
+div.window-folder{
+    padding: 1em;
+}
+div.window-folder-container{
+    display: flex;
+    background-color: white;
+    gap:1em;
+    padding:1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
