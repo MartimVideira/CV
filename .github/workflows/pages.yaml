@@ -26,6 +26,8 @@ jobs:
             mkdir build
             cd page
             php index.php > ../build/index.html
+            cp -r imgs ../build/
+            cp styles.css ../build/
 
 
       - name: Upload static files as artifact

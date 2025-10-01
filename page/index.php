@@ -27,9 +27,9 @@
     function windowControls(){ ?>
 
             <div class="window-controls">
-                <img src="window-controls-minimize.png"/>
-                <img src="window-controls-maximize.png"/>
-                <img src="window-controls-close.png"/>
+                <img src="./imgs/window-controls-minimize.png"/>
+                <img src="./imgs/window-controls-maximize.png"/>
+                <img src="./imgs/window-controls-close.png"/>
             </div>
     <?php }
     function windowHeaderBase($title_el) {
@@ -108,7 +108,7 @@
             </section>
       </div>
     <div id="user-profile">
-      <img src="user-icon.webp">
+      <img src="./imgs/user-icon.webp">
       <h1><?= $data["prefered_name"]?></h1>
     </div>
     </div>
